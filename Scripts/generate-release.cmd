@@ -16,7 +16,7 @@ echo [DTA] > version
 echo Version=%branch%_%ver% >> version
 
 if exist "Release\client_%branch%_%ver%.zip" del "Release\client_%branch%_%ver%.zip"
-"%PROGRAMFILES%\7-Zip\7z.exe" a "Release\client_%branch%_%ver%.zip" "INI\" "Map Renderer\" "Maps\" "Resources\" "cncnet5.dll" %launcher% "version"
+"%PROGRAMFILES%\7-Zip\7z.exe" a "Release\client_%branch%_%ver%.zip" "INI\" "Map Renderer\" "Maps\" "Resources\" "cncnet5.dll" %launcher% "version" "qres.dat" "qres32.dll"
 
 del version
 pause 
